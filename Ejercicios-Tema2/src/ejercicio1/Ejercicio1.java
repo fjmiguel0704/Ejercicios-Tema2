@@ -6,7 +6,7 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		//Creamos la variable num  
-		int num, invertido,  unidades = 0, decenas = 0, centenas = 0, millares = 0;
+		int num, invertido = 0,  aux, cifra;
 		
 		//Creamos el Scanner para leer por el teclado todo lo introducido por el usuario
 		Scanner read = new Scanner (System.in);
@@ -18,32 +18,36 @@ public class Ejercicio1 {
 		num = read.nextInt();
 		
 		//Declaro la variable unidades. Recogerá el resto de la división de la variable num entre 10
-		unidades= num%10;
+		//unidades= num%10;
 		
 		//Declaro la variable decenas. 
-		decenas= (num/10) %10;
-		centenas= (num/100) %10;
-		millares= (num/1000);
+	//	decenas= (num/10) %10;
+		//centenas= (num/100) %10;
+		//millares= (num/1000);
 		
 		if (num<0 || num>9999) {
 			System.out.println("ERROR: El número introducido no está comprendido en el rango que se solicita");
 		} 
 		
-		if (num<10000) {
-			if(unidades==millares && decenas==centenas) {
-				System.out.println(num + " Es un número capicúa");
-			} else if (num<1000) {
-				if (unidades==centenas) {
-					System.out.println(num + " Es un número capicúa");
-				} else if (num<100) {
-				if(unidades==decenas) {
-						System.out.println(num + " Es un número capicúa");
-					} else if(num<10) {
-						System.out.println(num + " Es un número capicúa");
-					}
-				} 
-			} 
+		while (num < 10);
+	
+        aux = num;
+        
+        while (aux!=0){
+            cifra = aux % 10;
+            invertido = invertido * 10 + cifra;
+            aux = aux / 10;
+        }
+    
+        if(num == invertido){
+            System.out.println("Es capicua");
+        }else{
+            System.out.println("No es capicua");
+        } 
+        
+        	//Cerramos el scanner
+      		read.close();
 		}
 	}
 
-}
+
