@@ -3,7 +3,12 @@ package ejercicio3;
 import java.util.Scanner;
 
 public class Ejercicio3 {
-
+	/**Las pruebas que deberíamos hacer al terminar el programa serían las siguientes:
+	*-Introducir una cantidad de kg en comida comprada superior al resultado que vaya a dar la 
+	*multiplicación de la cantidad introducida de animales por kilos que come cada animal. Para comprobar que efectivamente hay kg suficientes y que así sea mostrado.
+	*-Introducir una cantidad de kg en comida comprada inferior al resultado que vaya a dar la 
+	*multiplicación de la cantidad introducida de animales por kilos que come cada animal. Para comprobar cuanto correspondería en este caso a cada animal.*/
+	
 	public static void main(String[] args) {
 		
 		/**Creo las variables. Estas recogerán los kg de comida comprados, 

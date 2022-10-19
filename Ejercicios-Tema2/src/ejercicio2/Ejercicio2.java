@@ -3,7 +3,11 @@ package ejercicio2;
 import java.util.Scanner;
 
 public class Ejercicio2 {
-
+	/**Las pruebas que deberíamos hacer al terminar el programa serían:
+	*-Introducir un número de 8 dígitos. Para comprobar que me devuelve el dni con su letra correspondiente. 
+	*-Introducir un número de 9 dígitos. Para comprobar que me devuelve un error al no contener 8 dígitos.
+	*-Introducir un número de 7 dígitos. Para comprobar que me devuelve un error al no contener 8 dígitos.*/
+	
 	public static void main(String[] args) {
 		
 		//Creo la variable DNI. Dato introducido por el usuario
