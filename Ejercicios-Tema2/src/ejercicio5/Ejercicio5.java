@@ -24,6 +24,9 @@ public class Ejercicio5 {
 		
 		//Le mostramos al usuario el valor absoluto del número que ha introducido
 		System.out.println(num > 0 ? num : -num);
+		
+		//Cerramos el Scanner
+		read.close();
 
 	}
 
