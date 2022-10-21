@@ -33,7 +33,7 @@ public class Ejercicio8 {
 		if (diasEstancia>7&&distancia>800) {
 			descuento = precioBillete * 0.30;
 			precioBilleteDescuento = precioBillete - descuento;
-			System.out.println(precioBilleteDescuento + "€");
+			System.out.println(precioBilleteDescuento + "€ \nSe ha aplicado un descuento del 30%");
 		} 
 		
 		//Y en caso contrario, no aplique ningún descuento
